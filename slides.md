@@ -146,6 +146,65 @@ div {
 
 
 
+# Cibler un élément en css
+
+
+```html{monaco}
+
+  <section id = "section-id">
+    Super ! 
+  </section>
+  <section class = "section-class">
+    wow...
+  </section>
+
+
+<!-- <style> à mettre dans le <head> -->
+<style>
+  section{
+    background: blue;
+  }
+  #section-id{
+    text-align: center;
+  }
+  .section-class{
+    margin-top: 45px;
+  }
+</style>
+```
+
+
+---
+
+
+
+# Disposition en 2 colonnes avec flex
+
+```html
+
+<article>
+  <section></section>
+  <section></section>
+</article>
+
+
+<style>
+  article{
+    display: flex; 
+    justify-content: space-between;
+  }
+
+  section{
+    flex: 1;
+  }
+</style>
+
+```
+
+---
+
+
+
 # Centrer en css
 
 #### Un élément "block"
@@ -163,9 +222,22 @@ margin: auto;
 text-align: center;
 ```
 
+
 ---
 
 
+# Proposition html + css
+
+<div style = "height: 60px;">
+
+```html
+<<< @/snippets/example.html html
+```
+
+
+</div>
+
+---
 
 
 # Référencement naturel 
@@ -193,67 +265,10 @@ text-align: center;
 ```
 
 ---
-
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-
-
-# Monaco Editor
-
-Slidev provides built-in Monaco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
-
----
-layout: center
+<!-- layout: center
 class: text-center
 ---
+# Merci -->
 <!-- 
-# Merci
 
 [Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html) -->
