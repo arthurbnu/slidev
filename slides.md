@@ -5,12 +5,9 @@ theme: default
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://cover.sli.dev
 # some information about your slides, markdown enabled
-title: Welcome to Slidev
+title: HTML en pratique
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+  ## Formation HTML
 # apply any unocss classes to the current slide
 class: text-center
 # https://sli.dev/custom/highlighters.html
@@ -24,19 +21,20 @@ transition: slide-left
 mdc: true
 ---
 
-
 # HTML en pratique
 
 ## Essayons de reproduire [cette page](https://gallica.bnf.fr/ark:/12148/bd6t52694199/)
 
-<div style = "text-align: left " class = "mt-6"> 
-Ce qu'on va voir
+<!-- <v-drag-arrow pos="326,542,108,-146"/> -->
 
-- Quelques balises importantes
-- Un peu de CSS
-- Un peu de référencement
-- ...
-- 
+<div style = "text-align: left " class = "mt-6"> 
+  Ce qu'on va voir
+
+  - Quelques balises importantes
+  - Un peu de CSS
+  - Un peu de référencement
+  - ...
+  - 
 </div>
 
 <style>
@@ -46,7 +44,6 @@ ul {
 }
 
   </style>
-
 
 ---
 layout: image-right
