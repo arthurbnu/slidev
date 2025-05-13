@@ -109,6 +109,8 @@ level: 2
 Editeur dynamique ci-dessous ..
 
 ```html{monaco}
+<!-- Commencer à écrire pour voir les suggestions -->
+<!-- Passer la souris sur un élément pour voir les infos -->
 <footer>
 <img>
 <legend>
@@ -119,11 +121,11 @@ Editeur dynamique ci-dessous ..
 
 <br>
 
-Mais c'est pas très joli
+C'est bien mais comment on met en page ?
 
 <div v-click>
 
-## Heureusement il y a CSS
+## Et heureusement il y a CSS
 
 <!-- Editeur dynamique ci-dessous .. -->
 
@@ -148,11 +150,11 @@ div {
 
 ```html{monaco}
 
-  <section id = "section-id">
-    Super ! 
+  <section id = "mon-id-unique">
+    Voici une belle section ! 
   </section>
-  <section class = "section-class">
-    wow...
+  <section class = "ma-classe">
+    Et une autre ici ...
   </section>
 
 
@@ -161,10 +163,10 @@ div {
   section{
     background: blue;
   }
-  #section-id{
+  #mon-id-unique{
     text-align: center;
   }
-  .section-class{
+  .ma-classe{
     margin-top: 45px;
   }
 </style>
@@ -197,6 +199,10 @@ div {
 </style>
 
 ```
+<br>
+
+## On peut aussi utiliser l'affichage grid
+Une ressource utile : [css grid generator](https://cssgrid-generator.netlify.app/)
 
 ---
 
@@ -260,12 +266,4 @@ text-align: center;
       <meta name="twitter:image:alt" content="">
     </head>
 ```
-
 ---
-<!-- layout: center
-class: text-center
----
-# Merci -->
-<!-- 
-
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html) -->
