@@ -227,18 +227,26 @@ text-align: center;
 
 
 ---
-
+layout: image-right
+image: https://cover.sli.dev
+---
 
 # Proposition html + css
 
-<div style = "height: 60px;">
-
-```html
-<<< @/snippets/example.html html
-```
-
-
+<div>
+  <a href="/base.html" download="base.html">
+    Fichier HTML de base pour commencer
+  </a>
 </div>
+
+<br>
+
+<div>
+  <a href="/example.html" download="proposition.html">
+    Proposition complète
+  </a>
+</div>
+
 
 ---
 
