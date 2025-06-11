@@ -23,7 +23,7 @@ mdc: true
 
 # HTML en pratique
 
-## Essayons de reproduire [cette page](https://gallica.bnf.fr/ark:/12148/bd6t52694199/)
+## Essayons de reproduire [cette page](https://gallica.bnf.fr/ark:/12148/bd6t52694207/f1.image)
 
 <!-- <v-drag-arrow pos="326,542,108,-146"/> -->
 

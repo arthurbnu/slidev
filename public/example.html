@@ -1,151 +1,277 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Courrier de Strasbourg</title>
 
-    <!--  ici je définis mon style -->
-    <style>
-      body {
-        max-width: 800px;
-        margin: auto;
-        padding: 10px;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courrier de Strasbourg</title>
+
+  <!--  ici je définis mon style -->
+  <style>
+    body {
+      max-width: 800px;
+      margin: auto;
+      padding: 10px;
+    }
+
+    .logo {
+      width: 120px;
+      border-radius: 60px;
+      /* filter: drop-shadow(2px 4px 6px black); */
+    }
+
+    hr.wavy {
+      max-width: 300px;
+      border-style: dashed;
+    }
+
+    main {
+      text-align: center;
+    }
+
+    [lang="de"] {
+      font-style: italic;
+    }
+
+    .titles {
+      margin: 20px 0;
+      letter-spacing: 5px;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+    }
+
+    h1 {
+      text-transform: uppercase;
+    }
+
+    .top-dates {
+      margin: 20px 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .encart {
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      padding: 3px 0;
+    }
+
+    article {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      section {
+        flex: 1;
       }
 
-      .logo {
-        width: 120px;
-        border-radius: 60px;
-        /* filter: drop-shadow(2px 4px 6px black); */
+      p {
+        text-align: justify;
       }
+    }
+  </style>
+</head>
 
-      hr.wavy {
-        max-width: 300px;
-        border-style: dashed;
-      }
+<!--  dans body je mets mon contenu -->
 
-      main {
-        text-align: center;
-      }
+<body>
+  <header>
+    <a href="#">
+      <img class="logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a9/John_Paul_Jones_Congressional_Gold_Medal_%28front%29.jpg"
+        alt="Logo de mon site - Courrier de Strasbourg" />
+    </a>
+  </header>
 
-      [lang="de"] {
-        font-style: italic;
-      }
+  <main>
+    <div>N° 75.</div>
 
-      .titles {
-        margin: 20px 0;
-        letter-spacing: 5px;
-      }
+    <div class="titles">
+      <h1 lang="fr">Courrier de Strasbourg.</h1>
+      <hr class="wavy" />
+      <h2 lang="de">Riederrheiniſcher Kurier.</h2>
+      <hr class="wavy" role="presentation" />
+    </div>
 
-      h1,
-      h2 {
-        margin: 0;
-      }
-
-      h1 {
-        text-transform: uppercase;
-      }
-
-      .top-dates {
-        margin: 20px 0;
-        display: flex;
-        justify-content: space-around;
-      }
-
-      .encart {
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
-        padding: 3px 0;
-      }
-
-      article {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-
-        section {
-          flex: 1;
-        }
-        p {
-          text-align: justify;
-        }
-      }
-    </style>
-  </head>
-
-  <!--  dans body je mets mon contenu -->
-  <body>
-    <header>
-      <a href="#" >
-        <img
-          class="logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a9/John_Paul_Jones_Congressional_Gold_Medal_%28front%29.jpg"
-          alt="Logo de mon site - Courrier de Strasbourg"
-        />
-      </a>
-    </header>
-
-    <main>
-      <div>N° 74</div>
-
-      <div class="titles">
-        <h1 lang="fr">Courrier de Strasbourg.</h1>
-        <hr class="wavy" />
-        <h2 lang="de">Riederrheiniſcher Kurier.</h2>
-        <hr class="wavy" role="presentation" />
+    <div id="top">
+      <div class="top-dates">
+        <time datetime="1814-06-07">Jeudi, 9 juin 1814.</time>
+        <time datetime="1814-06-07" lang="de">Donnerstags, den 9. Juny 1814.</time>
       </div>
 
-      <div id="top">
-        <div class="top-dates">
-          <time datetime="1814-06-07">MARDI, 7 juin 1814</time>
-          <time datetime="1814-06-07" lang="de">Dinſtags, den 7. Juny 1814</time>
-        </div>
-
-        <div class="encart" lang="de">
-          Friedens-Tractat zwischen Frankreich, Dekreich, Rußland,
-          Großbrittannien und Draußen.
-        </div>
+      <div class="encart" lang="de">
+        Zuſaß-Artikel zu dem Tractat mit Rußland, England und Preußen - Adreſſe des proteſtantiſchen Directoriums -
+        Abreiſe von Paris
+        II. MM. der Kaiſer von Rußland un Oeftreich und des Königs von Preußen - Straßburg.
       </div>
+    </div>
 
-      <article>
-        <section>
-          <h3>
-            <time datetime="1814-06-07">Paris, vendredi 3 juin.</time>
-          </h3>
+    <article>
+      <section>
+        <h3>
+          <time datetime="1814-06-07">Paris, dimanche 5 juin.</time>
+        </h3>
+        <div>
+
           <p>
-            LA PAIX, conclue entre la France, l'Autriche, la Russie,
-            l’Angleterre et la Prusse, conclue et signée par les ministres
-            plénipotentiaires respectits, est de la teneur suivante: ART. Ier.
-            Il y aura, à compter de ce jour, paix et amitié entre S. M. le Roi
-            de France et de Navarre, d’une part, et S. M. l’Empereur d’Autriche
-            etc., et ses alliés, de l'autre part, leurs héritiers et
-            successeurs, leurs États et sujets respectifs à perpétuité. Les
-            hautes parties contractantes apporteront tous leurs soins à
-            maintenir, non-seulement entr'elles, mais encore, autant qu’il
-            dépend d'elles, entre tous les Etats de l’Eurone, la bonne harmonie
-            et intelligence si nécessaires à son repos II. Le Royaume de France
-            conserve l'intégrité de ses limites, telles qu'elles existaient à
-            l’époque du 1er jan- vier 1792. Il recevra en outre une augmentation
-            de ter- ritoire comprise dans la ligne de démarcation fixée par
-            l'article suivant. III...
+            La nouvelle de la paix a été annoncée avec solennité
+            aux habitans de Paris le 31 mai. Un grand cortége, à
+            la tête duquel était M. le baron de Chabrol, préfet du
+            département de la Seine, s'est rendu sur les places
+            principales de la capitale, et le héraut, représentant le
+            roi d'armes de France, a proclamé l'annonce suivante:
+            „ Habitans de Paris! La paix vient d'être conclue entre
+            la France, l'Autriche, Ia Russie, l'Angleterre et la
+            Prusse. Le traité qui la cimente a été signé le 3o mai.
+            Une paix honorable qui assure d'une manière stable le
+            repos de l'Europe et le vôtre, ne pouvait vous être
+            donnée que par vos Rois. Laissez éclater votre allé-
+            gresse à la nouvelle de ce bienfait qui réalise déjà une
+            partie du bonheur qui nous attend sous le Gouverne-
+            ment paternel du prince que la Providence nous a rendu.
+            Vive le Roi! vivent les Bourbons!
+            Par-tout la foule s'est pressée à la suite du cortége;
+            les témoignages de l'allégresse publique n'ont jamais
+            été plus universels, et les cris de vive le Roi! vivent
+            les Bourbons! qui n'ont cesse de se faire entendre,
+            ont prouvé que la joie des Parisiens pour un événe-
+            ment aussi heureux, ne pouvait être égalée que par
+            leur amour pour leur souverain."
+            Au Traité de paix sont joints des articles addition-
+            nels concernant les trois autres puissances.
+            Article additionnel au Traité avec la Russie.
+            Le duché de Varsovie étant sous l'administration d'un
+            conseil provisoire établi par la Russie, depuis que ce
+            pays à été occupé par ses armes, les deux hautes par-
+            dies contractanſés zont convenues de nommer imtne
+            diatement une commission spéciale composée de part
+            et dautre, d'un nombre égal de commissaires qui se-
+            ront chargés de l'examen, de la liquidation et de tous
+            les arrangemens relatifs aux prétentions réciproques.
+            Le présent article additionnel aura la même force et
+            valeur que s'il était inséré mot à mot au Traité parent
+            de ce jour, etc.
+            Articles additionnels au Traité avec la Grande-
+            Bretagne.
+            ART. Ier. S. M. Très chrétienne, partageant sans ré-
+            serve tous les sentimens de S. M. Britannique relative-
+            ment à un genre de commerce que repoussent et les
+            principes de la justice naturelle et les lumières des
+            temps où nous vivons, s'engage à unir, au futur
+            congrès, tous ses efforts à ceux de S. M. Britannique,
+            pour faire prononcer par toutes les puissances de la
+            chrétienneté, l'abolition de la traite des noirs, de telle
+            sorte que ladite traite cesse universellement, comme elle
+            cessera définitivement et dans tous les cas, de la part
+            de la France, dans un délai de cinq années, et qu'en
+            outre, pendant la durée de ce délai, aucun trafiquant
+            d'esclaves n'en puisse importer, ni vendre ailleurs que
+            dans les colonies de l'Etat dont il est sujet.
+            II. Le Gouvernement britannique et le Gouvernement
+            français nommeront incessamment des commissaires
+            pour liquider leur dépenses respectives pour l'entretien
+            des prisonniers de guerre, afin de s'arranger sur la
+            manière d'acquitter l'excédent qui se trouverait en fa-
+            veur de l'une ou de l'autre des deux puissances.
+            III. Les prisonniers de guerre respectifs seront tenus
+            d'acquitter, avant leur départ du lieu de leur détention,
+            les dettes particulières qu'ils pourraient y avoir contrac-
+            tées, ou de donner au moins caution satisfaisante.
+            IV. Il sera accordé de part et d'autre, aussitôt après
+            la ratification du présent Traité de paix, mainlevée
+            du séquestre qui aurait été mis depuis l'an 1792, sur
+            les fonds, revenus, créances et autres effets quelconques
+            des hautes parties contractantes ou de leurs sujets
+
           </p>
-        </section>
-        <section lang="de">
-          <h3>
-            <time datetime="1814-06-07">Paris, Freytags den 3. Juno.</time>
-          </h3>
-          <p>
-            Der Friede, der zwiſchen Frankreich, Oeſtreich, Rußland England und
-            Preußen am 30. Mav. von den bevollmächtigten Miniſtern abgeſchloßen
-            und unterzeichnet werden, iſt folgenden Jubalts Art. I. Won dieſem
-            Tage an ſoll Friede und Freundſchaft zwiſchen S. M. dem Könige von
-            Frankreich und Navarra, einerſeits, und S. M. dem Kaiſer von
-            Deſtreich 2c. und ſei⸗ nen Alliirtrn anderſeits, ihren Erben und
-            Nachfolgern, re⸗ ſpectifen Staaten und Unterthanen auf imiger
-            beſteben. ...
-          </p>
-        </section>
-      </article>
-    </main>
-  </body>
+        </div>
+
+      </section>
+      <section lang="de">
+        <h3>
+          <time datetime="1814-06-07">Donnerstags, den 9. Juny 1814.</time>
+        </h3>
+        <div>
+
+        <p>
+          Der Friede wurde am 31. May den Bewohnern von
+          Paris feyerlichſt verkündigt. Ein großer Zug, an deſſen
+          Spitze ſich der Hr. Baron von Chabrol, Präfect des
+          Seine⸗Departements befand, begab ſich auf die vorzuͤg⸗
+          lichſten Plätze der Hauptſtadt und der Herold, welcher
+          den Wapenkoͤnig von Frankreich vorſtellte, proclamirte
+          folgende Verkuͤndigung: „Bewohner von Paris! Eben iſt
+          der Friede zwiſchen Frankreich, Deſtreich, Rußland,
+          England und Preußen geſchloſſen worden. Der Vertrag,
+          der ihn befeſtigt, wurde am 30. May unterzeichnet. Ein
+          ehrenvoller Friede, der auf eine dauerhafte Weiſe die
+          Ruhe Europens und die eurige ſichert, konnte euch nur
+          von euern Koͤnigen gegeben werden. Laſſet eure Fröhlich⸗
+          keit bey der Nachricht dieſer Wohlthat laut werden; ſie
+          ſetzt bereits einen Theil des Glücks in Wirklichkeit, das
+          uns unter der väterlichen Regierung des Fuͤrſten erwar⸗
+          tet, den uns die Vorſehung wiedergegeben hat.
+          Zeil dem Koͤnige! Zeil den Bourbenen!
+          ueberall drängte ſich eine zahlloſe Volksmenge zu dem,
+          Zuge; nie waren die Aeußerungen der oͤffentlichen Freude
+          allgemeiner geweſen, und der Ruf es lebe der Koͤnig, es
+          leben die Bourbonen! der unaufhörlich erſchallte, be⸗
+          wies, daß die Freude der Pariſer über ein ſo glückliches
+          Ereigniß nur durch ihre Liebe zu ihrem Monarchen aufs
+          gewogen werden konnte.
+          Dem Friedens⸗Tractat ſind Zuſatz⸗Artikel, die drey
+          uͤbrigen Maͤchte betreffend, beygefuͤgt.
+          Zuſatz⸗Artikel zum Tractat mit Rußland.
+          dies contractanſés zont convenues de nommer imtne
+          Da das Herzogthum Warſchau unter der Verwaltung
+          eines proviſoriſchen Conſeils ſteht, das Rußland nieder⸗
+          geſetzt hat, ſeitdem dieſes Land von ſeinen Kriegsvoͤlkern
+          beſetzt war, ſo kamen die beiden hohen contrahirenden
+          Maͤchte uͤberein, unmittelbar eine Special⸗ Commiſſion zu
+          ernennen, die beiderſeitig aus einer gleichen Zahl Commiſ⸗
+          ſarien beſtuͤnde, und mit allem, was die Unterſuchung,
+          die Liquidation, und jede Berichtigung in Bezug auf die
+          wechſelſeitigen Anſpruͤche betrifft, beauftragt waͤre. Der
+          gegenwaͤrtige Zuſatz⸗Artikel ſoll dieſelbe Kraft und den⸗
+          ſelben Werth haben, als ob er Wort fuͤr Wort in dem
+          offenen Tractat von dieſem Tage eingeruͤckt ſtaͤnde ꝛc.
+          Zuſatz⸗Artikel zum Tractat mit Großbrittannien.
+          Art. I. Da Se. allerchriſtl. Maj. ohne Vorbehalt alle
+          Geſinnungen Sr. brittiſchen Maj. in Bezug auf eine Art
+          Handel theilen, welcher ſowohl gegen die Grundſaͤtze der
+          natuͤrlichen Gerechtigkeit als gegen die Aufklaͤrung der
+          Zeiten in denen wir leben, anſtoͤßt, ſo verpflichten ſich
+          Hoͤchſtdieſelbe, bey dem kuͤnftigen Congreſſe alle Ihre An⸗
+          ſtrengungen mit denen Sr. britt. Maj. zu vereinigen, um alle
+          Mächte der Chriſtenheit zu vermögen, den Negerhandel
+          abzuſchaffen, damit der beſagte Händel allgemein aufhoͤre,
+          ſo wie er definitiv und in allen Faͤllen von Seiten Frank⸗
+          reichs in einer Zeitfriſt von 5 Jahren aufhoͤren wird,
+          und damit überdies wäͤhrend der Dauer die ſer Friſt kei⸗
+          Sklavenhaͤndler, Sklaven anderswo einführen und ver⸗
+          kaufen dürfe, als in den Colonien des Staats, zu dem
+          er gehoͤrt. II. Die englische und französische Regierung
+          werden unverzuͤglich Commiſſarien ernennen, um ihre
+          wechſelſeitigen Ausgaben für den Unterhalt der Kriegs⸗
+          Gefangenen zu liquidiren, und übereinzukommen, wie ſie
+          den Ueberſchuß zu Gunſten der einen oder andern Macht,
+          berichtigen wollen. III. Die wechſelſeitigen Kriegs⸗Gefan⸗
+          genen ſind gehalten, vor ihrer Abreiſe aus dem Orte ihrer
+          Gefangenſchaft, die Privat⸗Schulden, die ſie koͤnnten ge⸗
+          macht haben, zu berichtigen, oder wenigſtens eine hinrei⸗
+          chende Buͤrgſchaft dafuͤr zu geben. IV. Es ſoll ſogleich nach
+          der Ratification des gegenwaͤrtigen Friedens⸗Tractats der
+          Sequeſter aufgehoben werden, welcher ſeit dem Jahr 1792
+          koͤnnte auf die Güter, Einkünfte, Schuldfordirungen
+
+        </p>
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+
 </html>
