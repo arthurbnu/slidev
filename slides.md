@@ -60,9 +60,9 @@ image: https://cover.sli.dev
 <!-- css
     https://caniuse.com/css-nesting -->
 
-[Page à reproduire](https://gallica.bnf.fr/ark:/12148/bd6t52694199/) 
+[Page à reproduire](https://gallica.bnf.fr/ark:/12148/bd6t52694207/f1.image) 
 
-[Contenu textuel](https://gitlab.huma-num.fr/estrades/formations/-/blob/main/ressources/HTR/transcription_fr_de.odt?ref_type=heads)
+[Contenu textuel](https://gitlab.huma-num.fr/estrades/formations/-/blob/main/ressources/HTR/n75/n75.txt?ref_type=heads)
 
    ![w3schools](https://logo.clearbit.com/w3schools.com) W3schools : [Tags (balises)](https://www.w3schools.com/tags/default.asp) et 
     [layouts](https://www.w3schools.com/html/html_layout.asp)
