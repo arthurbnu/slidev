@@ -172,40 +172,34 @@ div {
 </style>
 ```
 
-
 ---
 
+# Disposition en 2 colonnes avec display: flex
 
-
-# Disposition en 2 colonnes avec flex
-
-```html
-
+```html {monaco-run}
+<!--  contenu : html -->
 <article>
-  <section></section>
-  <section></section>
+  <section>Section 1</section>
+  <section>Section 2</section>
 </article>
 
-
+<!--  mise en page : css -->
 <style>
   article{
     display: flex; 
     justify-content: space-between;
+    gap: 20px;
   }
-
   section{
     flex: 1;
+    background: yellow;
   }
 </style>
-
 ```
-<br>
 
-## On peut aussi utiliser l'affichage grid
-Une ressource utile : [css grid generator](https://cssgrid-generator.netlify.app/)
+On peut aussi le faire avec <strong> display: grid </strong> - [ressource utile : css grid generator](https://cssgrid-generator.netlify.app/)
 
 ---
-
 
 
 # Centrer en css
@@ -247,9 +241,7 @@ image: https://cover.sli.dev
   </a>
 </div>
 
-
 ---
-
 
 # Référencement naturel 
 
@@ -274,4 +266,3 @@ image: https://cover.sli.dev
       <meta name="twitter:image:alt" content="">
     </head>
 ```
----
