@@ -174,6 +174,27 @@ div {
 
 ---
 
+
+# Centrer en css
+
+#### Un élément "block"
+
+```css
+/* display: block; */
+margin: auto;
+```
+
+<br>
+
+#### Un élément "inline" 
+```css
+/* display: inline; */
+text-align: center;
+```
+
+
+---
+
 # Disposition en 2 colonnes avec display: flex
 
 ```html {monaco-run}
@@ -198,27 +219,6 @@ div {
 ```
 
 On peut aussi le faire avec <strong> display: grid </strong> - [ressource utile : css grid generator](https://cssgrid-generator.netlify.app/)
-
----
-
-
-# Centrer en css
-
-#### Un élément "block"
-
-```css
-/* display: block; */
-margin: auto;
-```
-
-<br>
-
-#### Un élément "inline" 
-```css
-/* display: inline; */
-text-align: center;
-```
-
 
 ---
 layout: image-right
