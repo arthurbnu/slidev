@@ -22,7 +22,7 @@
 
     hr.wavy {
       max-width: 300px;
-      border-style: dashed;
+      /* border-style: dashed; */
     }
 
     main {
@@ -63,28 +63,46 @@
       display: flex;
       justify-content: space-between;
       gap: 20px;
+
       section {
         flex: 1;
       }
+
       p,
       blockquote {
         text-align: justify;
         margin: 5px;
       }
+
       strong {
         font-style: italic;
         display: block;
         margin-left: 10px;
-        text-align: right;
+        text-align: center;
       }
     }
 
     /* effet au survol pour la correspondance des paragraphes */
-    [data-name=p1]:hover, body:has([data-name=p1]:hover) [data-name=p1],
-    [data-name=p2]:hover, body:has([data-name=p2]:hover) [data-name=p2],
-    [data-name=p3]:hover, body:has([data-name=p3]:hover) [data-name=p3]
-    {
+    [data-name=p1]:hover,
+    body:has([data-name=p1]:hover) [data-name=p1],
+    [data-name=p2]:hover,
+    body:has([data-name=p2]:hover) [data-name=p2],
+    [data-name=p3]:hover,
+    body:has([data-name=p3]:hover) [data-name=p3],
+    [data-name=p4]:hover,
+    body:has([data-name=p4]:hover) [data-name=p4] {
       background-color: aliceblue;
+    }
+
+    .ligne {
+      text-align: justify;
+      line-height: 10px;
+    }
+
+    .ligne::after {
+      content: "";
+      display: inline-block;
+      width: 100%;
     }
   </style>
 </head>
@@ -101,7 +119,7 @@
   </header>
 
   <main>
-    <div>N° 75.</div>
+    <div>N° 77.</div>
 
     <div class="titles">
       <h1 lang="fr">Courrier de Strasbourg.</h1>
@@ -112,189 +130,181 @@
 
     <div id="top">
       <div class="top-dates">
-        <time datetime="1814-06-09">Jeudi, 9 juin 1814.</time>
-        <time datetime="1814-06-09" lang="de">Donnerstags, den 9. Juny 1814.</time>
+        <time datetime="1814-06-12">DIMANCHE, 12 juin 1814.</time>
+        <time datetime="1814-06-12" lang="de">Soontags, den 12. Juny 1814.</time>
       </div>
 
       <div class="encart" lang="de">
-        Zuſaß-Artikel zu dem Tractat mit Rußland, England und Preußen - Adreſſe des proteſtantiſchen Directoriums -
-        Abreiſe von Paris
-        II. MM. der Kaiſer von Rußland un Oeftreich und des Königs von Preußen - Straßburg.
+        Declaration des Könige - Berordnungen die Fremden, Die Genatoren, den Bairs-Ballatz, die Devutierten und den Ort ihrer Ber-
+        ſammſungen betreffend - Antwort Sr. Maj. auf die Adreſſe der Bairs und auf die Adreſſe der Devutierten  u. - Strasburg.
       </div>
     </div>
 
     <article>
       <section>
         <h3>
-          Paris, <time datetime="1814-06-05">dimanche 5 juin.</time>
+          Paris, <time datetime="1814-06-08">mercredi 8 juin.</time>
         </h3>
+
         <div>
-
-          <p data-name = "p1">
-            La nouvelle de la paix a été annoncée avec solennité
-            aux habitans de Paris le 31 mai. Un grand cortége, à
-            la tête duquel était M. le baron de Chabrol, préfet du
-            département de la Seine, s'est rendu sur les places
-            principales de la capitale, et le héraut, représentant le
-            roi d'armes de France, a proclamé l'annonce suivante:
+            <strong>Suite de la séance royale au 4 juin.</strong> 
+          <p data-name="p1">
+            Après un discours M. Ie chancelier a remis à M. Fer-
+            rand, ministre d'Etat, la déclaration du Roi concernant
+            la charte constitutionnelle.
+          </p> 
+          <p data-name="p2">
+            LOUIS, etc. A tous ceux qui ces présentes verront,
+            salet:
           </p>
-          <blockquote data-name = "p2">
-            "Habitans de Paris! La paix vient d'être conclue entre
-            la France, l'Autriche, Ia Russie, l'Angleterre et la
-            Prusse. Le traité qui la cimente a été signé le 3o mai.
-            Une paix honorable qui assure d'une manière stable le
-            repos de l'Europe et le vôtre, ne pouvait vous être
-            donnée que par vos Rois. Laissez éclater votre allé-
-            gresse à la nouvelle de ce bienfait qui réalise déjà une
-            partie du bonheur qui nous attend sous le Gouverne-
-            ment paternel du prince que la Providence nous a rendu.
-            <strong>
-              Vive le Roi! vivent les Bourbons!
-            </strong>
-            Par-tout la foule s'est pressée à la suite du cortége;
-            les témoignages de l'allégresse publique n'ont jamais
-            été plus universels, et les cris de vive le Roi! vivent
-            les Bourbons! qui n'ont cesse de se faire entendre,
-            ont prouvé que la joie des Parisiens pour un événe-
-            ment aussi heureux, ne pouvait être égalée que par
-            leur amour pour leur souverain."
-          </blockquote>
-          <p data-name = "p3">
-            Au Traité de paix sont joints des articles addition-
-            nels concernant les trois autres puissances.
-            Article additionnel au Traité avec la Russie.
-            Le duché de Varsovie étant sous l'administration d'un
-            conseil provisoire établi par la Russie, depuis que ce
-            pays à été occupé par ses armes, les deux hautes par-
-            dies contractanſés zont convenues de nommer imtne
-            diatement une commission spéciale composée de part
-            et dautre, d'un nombre égal de commissaires qui se-
-            ront chargés de l'examen, de la liquidation et de tous
-            les arrangemens relatifs aux prétentions réciproques.
-            Le présent article additionnel aura la même force et
-            valeur que s'il était inséré mot à mot au Traité parent
-            de ce jour, etc.
-            Articles additionnels au Traité avec la Grande-
-            Bretagne.
-            ART. Ier. S. M. Très chrétienne, partageant sans ré-
-            serve tous les sentimens de S. M. Britannique relative-
-            ment à un genre de commerce que repoussent et les
-            principes de la justice naturelle et les lumières des
-            temps où nous vivons, s'engage à unir, au futur
-            congrès, tous ses efforts à ceux de S. M. Britannique,
-            pour faire prononcer par toutes les puissances de la
-            chrétienneté, l'abolition de la traite des noirs, de telle
-            sorte que ladite traite cesse universellement, comme elle
-            cessera définitivement et dans tous les cas, de la part
-            de la France, dans un délai de cinq années, et qu'en
-            outre, pendant la durée de ce délai, aucun trafiquant
-            d'esclaves n'en puisse importer, ni vendre ailleurs que
-            dans les colonies de l'Etat dont il est sujet.
-            II. Le Gouvernement britannique et le Gouvernement
-            français nommeront incessamment des commissaires
-            pour liquider leur dépenses respectives pour l'entretien
-            des prisonniers de guerre, afin de s'arranger sur la
-            manière d'acquitter l'excédent qui se trouverait en fa-
-            veur de l'une ou de l'autre des deux puissances.
-            III. Les prisonniers de guerre respectifs seront tenus
-            d'acquitter, avant leur départ du lieu de leur détention,
-            les dettes particulières qu'ils pourraient y avoir contrac-
-            tées, ou de donner au moins caution satisfaisante.
-            IV. Il sera accordé de part et d'autre, aussitôt après
-            la ratification du présent Traité de paix, mainlevée
-            du séquestre qui aurait été mis depuis l'an 1792, sur
-            les fonds, revenus, créances et autres effets quelconques
-            des hautes parties contractantes ou de leurs sujets
-          </p>
-        </div>
 
-      </section>
-      <section lang="de">
-        <h3>
-          Paris, <time datetime="1814-06-05">Sonntags, den 5. Juny.</time>
-        </h3>
-        <div>
+          <!-- <br> -->
 
-          <p data-name = "p1">
-            Der Friede wurde am 31. May den Bewohnern von
-            Paris feyerlichſt verkündigt. Ein großer Zug, an deſſen
-            Spitze ſich der Hr. Baron von Chabrol, Präfect des
-            Seine⸗Departements befand, begab ſich auf die vorzuͤg⸗
-            lichſten Plätze der Hauptſtadt und der Herold, welcher
-            den Wapenkoͤnig von Frankreich vorſtellte, proclamirte
-            folgende Verkuͤndigung:
-          </p>
-          <blockquote data-name = "p2">
-            "Bewohner von Paris! Eben iſt
-            der Friede zwiſchen Frankreich, Deſtreich, Rußland,
-            England und Preußen geſchloſſen worden. Der Vertrag,
-            der ihn befeſtigt, wurde am 30. May unterzeichnet. Ein
-            ehrenvoller Friede, der auf eine dauerhafte Weiſe die
-            Ruhe Europens und die eurige ſichert, konnte euch nur
-            von euern Koͤnigen gegeben werden. Laſſet eure Fröhlich⸗
-            keit bey der Nachricht dieſer Wohlthat laut werden; ſie
-            ſetzt bereits einen Theil des Glücks in Wirklichkeit, das
-            uns unter der väterlichen Regierung des Fuͤrſten erwar⸗
-            tet, den uns die Vorſehung wiedergegeben hat.
-            <strong>
-              Zeil dem Koͤnige! Zeil den Bourbenen!
-            </strong>
-            ueberall drängte ſich eine zahlloſe Volksmenge zu dem,
-            Zuge; nie waren die Aeußerungen der oͤffentlichen Freude
-            allgemeiner geweſen, und der Ruf es lebe der Koͤnig, es
-            leben die Bourbonen! der unaufhörlich erſchallte, be⸗
-            wies, daß die Freude der Pariſer über ein ſo glückliches
-            Ereigniß nur durch ihre Liebe zu ihrem Monarchen aufs
-            gewogen werden konnte."
-          </blockquote>
+          <p data-name="p3">
+            La divine Providence, en nous rappelant dans nos
+            Etats, après une longue absence, nous a imposé de
+            grandes obligations. La paix était le premier besoin de
+            nos sujets; nous nous en sommes occupés sans re-
+            lâche, et cette paix, si nécessaire à la France, comme
+            au reste de l'Europe, est signée. Une charte constitu-
+            lonnelle était sollicitée par l'état actuel du royaume;
+            nous l'avons promise et nous la publions. Nous avons
+            consideré que, bien que l'autorité toute entière résidât
+            en France dans la personne du Roi, nos prédécesseurs
+            n'avaient point hésité à en modifier l'exercice suivant
+            la différence des temps; que c'est ainsi que les com-
+            munes oni dû leur affranchissement à Louis-le-Gros,
+            la confirmation et l'extension de leurs droits à S. Louis
+            et à Philippe le-Bel; que l'ordre judiciaire a été établi
+            et développé par les lois de Louis XI, d'Henri II et de
+            Charles IX; Enfin que Louis XIV a réglé presque toutes
+            les parties de l'administration publique par différentes
+            ordonnances dont rien encore n'avait surpassé la sa-
+            gesse. Nous avons dû, à l'exemple des rois nos pré-
+            décesseurs, apprécier les effets du progrès toujours
+            croissant des lumières, les rapports nouveaux que ces
+            progrès ont introduits dans la société, la direction im-
+            primée aux esprits depuis un demi siècle, et les graves
+            altérations qui en sont résultées. Nous avons reconnu
+            que le vœu de nos sujets pour une charte constitu-
+            tionnelle, était l'expression d'un besoin réel; mais en
+            cédant à ce voeu, nous avons pris toutes les précau-
+            tions pour que cette charte fût digne de nous et du
+            peuple auquel nous sommes fiers de commander. Des
+            hommes sages pris dans les premiers corps de l'Etat,
+            se sont réunis à des commissaires de notre conseil,
+            pour travailler cet important ouvrage.
+        </p>
           
-          <p data-name = "p3">
-          Dem Friedens⸗Tractat ſind Zuſatz⸗Artikel, die drey
-          uͤbrigen Maͤchte betreffend, beygefuͤgt.
-          Zuſatz⸗Artikel zum Tractat mit Rußland.
-          dies contractanſés zont convenues de nommer imtne
-          Da das Herzogthum Warſchau unter der Verwaltung
-          eines proviſoriſchen Conſeils ſteht, das Rußland nieder⸗
-          geſetzt hat, ſeitdem dieſes Land von ſeinen Kriegsvoͤlkern
-          beſetzt war, ſo kamen die beiden hohen contrahirenden
-          Maͤchte uͤberein, unmittelbar eine Special⸗ Commiſſion zu
-          ernennen, die beiderſeitig aus einer gleichen Zahl Commiſ⸗
-          ſarien beſtuͤnde, und mit allem, was die Unterſuchung,
-          die Liquidation, und jede Berichtigung in Bezug auf die
-          wechſelſeitigen Anſpruͤche betrifft, beauftragt waͤre. Der
-          gegenwaͤrtige Zuſatz⸗Artikel ſoll dieſelbe Kraft und den⸗
-          ſelben Werth haben, als ob er Wort fuͤr Wort in dem
-          offenen Tractat von dieſem Tage eingeruͤckt ſtaͤnde ꝛc.
-          Zuſatz⸗Artikel zum Tractat mit Großbrittannien.
-          Art. I. Da Se. allerchriſtl. Maj. ohne Vorbehalt alle
-          Geſinnungen Sr. brittiſchen Maj. in Bezug auf eine Art
-          Handel theilen, welcher ſowohl gegen die Grundſaͤtze der
-          natuͤrlichen Gerechtigkeit als gegen die Aufklaͤrung der
-          Zeiten in denen wir leben, anſtoͤßt, ſo verpflichten ſich
-          Hoͤchſtdieſelbe, bey dem kuͤnftigen Congreſſe alle Ihre An⸗
-          ſtrengungen mit denen Sr. britt. Maj. zu vereinigen, um alle
-          Mächte der Chriſtenheit zu vermögen, den Negerhandel
-          abzuſchaffen, damit der beſagte Händel allgemein aufhoͤre,
-          ſo wie er definitiv und in allen Faͤllen von Seiten Frank⸗
-          reichs in einer Zeitfriſt von 5 Jahren aufhoͤren wird,
-          und damit überdies wäͤhrend der Dauer die ſer Friſt kei⸗
-          Sklavenhaͤndler, Sklaven anderswo einführen und ver⸗
-          kaufen dürfe, als in den Colonien des Staats, zu dem
-          er gehoͤrt. II. Die englische und französische Regierung
-          werden unverzuͤglich Commiſſarien ernennen, um ihre
-          wechſelſeitigen Ausgaben für den Unterhalt der Kriegs⸗
-          Gefangenen zu liquidiren, und übereinzukommen, wie ſie
-          den Ueberſchuß zu Gunſten der einen oder andern Macht,
-          berichtigen wollen. III. Die wechſelſeitigen Kriegs⸗Gefan⸗
-          genen ſind gehalten, vor ihrer Abreiſe aus dem Orte ihrer
-          Gefangenſchaft, die Privat⸗Schulden, die ſie koͤnnten ge⸗
-          macht haben, zu berichtigen, oder wenigſtens eine hinrei⸗
-          chende Buͤrgſchaft dafuͤr zu geben. IV. Es ſoll ſogleich nach
-          der Ratification des gegenwaͤrtigen Friedens⸗Tractats der
-          Sequeſter aufgehoben werden, welcher ſeit dem Jahr 1792
-          koͤnnte auf die Güter, Einkünfte, Schuldfordirungen
+          <p data-name="p4">
+            En même temps que nous reconnaissions qu'une
+            constitution libre et monarchique devait remplir l'at-
+            tente de l'Europe éclairée, nous avous dû nous sou-
+            venir aussi que notre premier devoir envers nos peuples
+            était de conserver, pour leur propre intéret, les droits
+            et les prérogatives de notre couronne. Nous avons
+            espéré qu'instruits par l'expérience, ils seraient con-
+            vaincus que l'autorité suprême peut seule donner aux
+            institutions qu'elle établit, la force, la permanence et
+            la majesté dont elle est elle-même revêtue; qu'ainsi,
+            lorsque la sagesse des rois s'accorde librement avec
+            le voeu des peuples, une charte constitutionnelle peut
+            être de longue durée; mais que quand la violence ar-
+            rache des concessions à la faiblesse du Gouvernement,
+            la liberté publique n'est pas moins en danger que le
+            trône même. Nous avons enfin cherché les principes
+            de la charte constitutionnelle dans le caractère français
+            et dans les monumens vénérables de siècles passés.
+            Ainsi nous avon vu dans le renouvellement de la
+          </p>
+            
+          </div>
+          
+        </section>
+        <section lang="de">
+          <h3>
+          Paris, <time datetime="1814-06-08">Mittwochs, den 8. Juny.</time>
+        </h3>
+        <div>
+
+          <strong>
+            Sortſetzung der königl. Sitzung vom 4. Junius⸗
+          </strong>
+          <p data-name="p1">
+            Nach einer Rede des Kanzlerg las der Staats⸗Miniſter
+            Hr. Ferrand folgende tonigliche Declaration, die Confti⸗
+            tutions-Urkunde betreffend.
+          </p>
+
+          <p data-name="p2">
+            Ludwig 2c. When benen, welche Gegenwärtliges ſehen
+            werden, meinen Sruf
+          </p> 
+
+          <p data-name="p3">
+            Die göttliche Borſebung hat Uns, da nie, nach einer
+            langen Abweſenheit, Uns in unſere Staaten zuruckrief,
+            große Verbindlichkeiten aufgelegt. Der Friede war das
+            erſte Bedürfniß Unſerer Unterthanen. Unabläßig beſchäf⸗
+            tigten Wir Uns damit, und dieſer, Frankreich eben ſo,
+            wie dem übrigen Europa, nothwendige Feiede iſt unter⸗
+            zeichnet. Eine Conſtitutions⸗Uckunde war von dem gegen⸗
+            Pärtigen Zuſtande des Königreichs angelegentlich gefor⸗
+            dert; Wir haben ſie verſprochen und Wir machen ſie' be⸗
+            kannt. Wir haben in Betrachtung gezogen, daß obgleich
+            in Frankreich die ganze Gewalt in der Perſon des Könige
+            vereinigt iſt, unſeke Vorgänger keinen Anſtand genommen
+            haben, die Ausübung derſelben nach dem Bedürfulß der
+            Zeiten zu modificiren; daß auf ſolche Art die Gemeinden
+            Ludwig dem Dicken ihre Befreyung, die Beſtätigung und
+            Ausdehnung ihrer Rechte Ludwig dem Heiligen und Philipy
+            dem Schönen-derdanften, dass die Ausübung der richter⸗
+            lichen Gewalt von Ludwig IX, Heinr. II und Cari IX
+            eingerichtet und er wickelt worden, endlich daß Ludwig XIV
+            faſt allen Toeilen der öffentlichen Verwaltung durch ver⸗
+            ſchiedene Verordnungen eine neue Geſtalt gegeben hat,
+            deren Weisheit noch von nichts übertroſfen worden war.
+            Nach dem Beyſpiele der Koönige, Unſerer Vorfahren, ſoll⸗
+            ten Wir die Wirtungen der immer fortſchreitenden Auf⸗
+            tiärung, die neuen Verhältniſſe, weiche dieſe Fortſchritte
+            in die Geſellſchaft gebracht haben, die dem Geiſte ſeit einem
+            halben Jahrhunderte eingedruckte Richtung und die dar⸗
+            aus entſtehenden wichtigen Verſchlimmerungen würdigen.
+            Wir baben eingeſehen, daß dir Wunſch Unſerer Unter⸗
+            thanen nach einer Conſtitutions⸗Urkunde der Ausdtuck
+            eines wahren Bedürfniſſes war; indem Wir aber dieſem
+            Wunſche nachgaben, nahmen Wir alle Vorſichts⸗Maaß⸗
+            regeln, damit dieſe Urkunde Unſerer und des Volks, dem
+            Wir, zu befehlen ſtolz ſind, würdig wäre. Weiſe Männer
+            aus den erſten Staatscorps haben ſich mit Commiſſarien
+            Unſets Conſells vereinigt, um an dieſem wichtigen Wecke
+            zu arbeiten.
 
           </p>
+
+
+
+          <p data-name="p4">
+            Zu gleicher Zeit, als Wir einſahen, daß eine ſreye und
+            monafchiſche Conſtitution die Erwartung des aufgeklär⸗
+            ten Europa erfüllen ſollte, mußten Wir Uns auch erin⸗
+            nern, daß Unſere erſie Pflicht gegen Unſere Volker darin
+            beſtund, zu ihrem eigenen Intereſſe, die Rechte und Vor⸗
+            rechte Unſerer Krone zu erhalten. Wir hofften, daß ihre
+            eigene Erfahrung ſie überzeugt hätte, daß die oberſte
+            Gewalt allein den Inſtltutionen, die ſie gründet, Kraft,
+            Dauer und diejenige Majeſtat ben könne, womit ſie ſelbſt
+            bekleldet iſt; daß alſo, wenn die Weisheit der Könige
+            freywillig mit dem Wunſche dir Volker übereinſtimmt.
+            eure Conſtitutions⸗Urkande von langer Dauer ſeyn kann;
+            daß aber, wenn Sewaltthätigkeit der Schwäche der Re⸗
+            gierung Abtretungen entreißt. Die öffentliche Freyhelt nicht
+            weniger als der Theon ſelbſt in Gefahr iſt. Endlich haben
+            Wir die Grundſätze der Conſtitutions⸗Urkunde in dem
+            franzöſiſchen Character und in den ehrwürdigen Dent⸗
+            mälern verftoffener Jabrbrunderte auſgeſucht. Alſo ſaben
+          </p>
+
         </div>
       </section>
     </article>

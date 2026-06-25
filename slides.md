@@ -23,7 +23,7 @@ mdc: true
 
 # HTML en pratique
 
-## Essayons de reproduire [cette page](https://gallica.bnf.fr/ark:/12148/bd6t52694207/f1.image)
+## Essayons de reproduire [cette page](https://gallica.bnf.fr/ark:/12148/bd6t5269421m/f1.item)
 
 <!-- <v-drag-arrow pos="326,542,108,-146"/> -->
 
@@ -64,11 +64,10 @@ image: https://cover.sli.dev
 
 [Contenu textuel](https://gitlab.huma-num.fr/estrades/formations/-/blob/main/ressources/HTR/n75/n75.txt?ref_type=heads)
 
-   ![w3schools](https://logo.clearbit.com/w3schools.com) W3schools : [Tags (balises)](https://www.w3schools.com/tags/default.asp) et 
+   ![w3schools](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/960px-W3Schools_logo.svg.png?_=20210601004220) [Tags (balises)](https://www.w3schools.com/tags/default.asp) et 
     [layouts](https://www.w3schools.com/html/html_layout.asp)
 
-![Remote Image](https://logo.clearbit.com/developer.mozilla.org/)
-   MDN : [Eléments (balises)](https://developer.mozilla.org/fr/docs/Web/HTML/Element) et [layouts](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure#html_layout_elements_in_more_detail)
+![Remote Image](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/MDN_Web_Docs_logo.svg/960px-MDN_Web_Docs_logo.svg.png) [Eléments (balises)](https://developer.mozilla.org/fr/docs/Web/HTML/Element) et [layouts](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure#html_layout_elements_in_more_detail)
 
 
 <div v-click>
@@ -240,6 +239,26 @@ image: https://cover.sli.dev
     Proposition complète
   </a>
 </div>
+
+<br>
+<br>
+<br>
+
+
+### Comment on fait des vagues ? 
+[Comme ça par exemple](https://css-tricks.com/how-to-create-wavy-shapes-patterns-in-css/#top-of-site)
+
+Oui le css peut être compliqué
+
+<br>
+
+<!-- ## Conseils
+Ouvrir le fichier de base 
+<ul>
+<li>avec un éditeur et</li> <li>avec un navigateur</li>
+</ul>
+S'aider de la proposition
+<br>Faire les recherches -->
 
 ---
 
