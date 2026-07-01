@@ -83,26 +83,12 @@
     }
 
     /* effet au survol pour la correspondance des paragraphes */
-    [data-name=p1]:hover,
+    [data-name]:hover,
     body:has([data-name=p1]:hover) [data-name=p1],
-    [data-name=p2]:hover,
     body:has([data-name=p2]:hover) [data-name=p2],
-    [data-name=p3]:hover,
     body:has([data-name=p3]:hover) [data-name=p3],
-    [data-name=p4]:hover,
     body:has([data-name=p4]:hover) [data-name=p4] {
       background-color: aliceblue;
-    }
-
-    .ligne {
-      text-align: justify;
-      line-height: 10px;
-    }
-
-    .ligne::after {
-      content: "";
-      display: inline-block;
-      width: 100%;
     }
   </style>
 </head>

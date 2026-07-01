@@ -23,7 +23,7 @@ mdc: true
 
 # HTML en pratique
 
-## Essayons de reproduire [cette page](https://gallica.bnf.fr/ark:/12148/bd6t5269421m/f1.item)
+## Essayons de reproduire [cette page](https://gallica.bnf.fr/ark:/12148/bd6t52694207/f1.image)
 
 <!-- <v-drag-arrow pos="326,542,108,-146"/> -->
 
@@ -62,7 +62,7 @@ image: https://cover.sli.dev
 
 [Page à reproduire](https://gallica.bnf.fr/ark:/12148/bd6t52694207/f1.image) 
 
-[Contenu textuel](https://gitlab.huma-num.fr/estrades/formations/-/blob/main/ressources/HTR/n75/n75.txt?ref_type=heads)
+[Contenu textuel](https://gitlab.huma-num.fr/estrades/formations/-/blob/main/ressources/HTR/n77/n77.txt?ref_type=heads)
 
    ![w3schools](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/960px-W3Schools_logo.svg.png?_=20210601004220) [Tags (balises)](https://www.w3schools.com/tags/default.asp) et 
     [layouts](https://www.w3schools.com/html/html_layout.asp)
