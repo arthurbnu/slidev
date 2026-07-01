@@ -23,7 +23,7 @@ mdc: true
 
 # HTML en pratique
 
-## Essayons de reproduire [cette page](https://gallica.bnf.fr/ark:/12148/bd6t52694207/f1.image)
+## Essayons de reproduire [cette page](https://gallica.bnf.fr/ark:/12148/bd6t5269421m/f1.image)
 
 <!-- <v-drag-arrow pos="326,542,108,-146"/> -->
 
@@ -60,7 +60,7 @@ image: https://cover.sli.dev
 <!-- css
     https://caniuse.com/css-nesting -->
 
-[Page à reproduire](https://gallica.bnf.fr/ark:/12148/bd6t52694207/f1.image) 
+[Page à reproduire](https://gallica.bnf.fr/ark:/12148/bd6t5269421m/f1.image) 
 
 [Contenu textuel](https://gitlab.huma-num.fr/estrades/formations/-/blob/main/ressources/HTR/n77/n77.txt?ref_type=heads)
 
